@@ -4,7 +4,8 @@ const connectDatabase = require("./config/database");
 const cloudinary = require("cloudinary");
 require('dotenv').config();
 
- const PORT = https://mern-eco-dzus.onrender.com || 4000
+ const PORT = process.env.PORT || 4000
+
 // Handling Uncaught Exception
 process.on("uncaughtException", (err) => {
   console.log(`Error: ${err.message}`);
@@ -30,8 +31,8 @@ cloudinary.config({
 });
 
 const server = app.listen(PORT, () => {
- console.log(`server running on https://mern-eco-dzus.onrender.com`);
-  // console.log(`server running on http://localhost:${PORT}`);
+ // console.log(`server running on https://mern-eco-dzus.onrender.com`);
+ console.log(`server running on http://localhost:${PORT}`);
 });
 
 // Unhandled Promise Rejection
