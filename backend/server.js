@@ -4,7 +4,7 @@ const connectDatabase = require("./config/database");
 const cloudinary = require("cloudinary");
 require('dotenv').config();
 
- const PORT = 4000
+ const PORT = https://mern-eco-dzus.onrender.com || 4000
 // Handling Uncaught Exception
 process.on("uncaughtException", (err) => {
   console.log(`Error: ${err.message}`);
@@ -29,7 +29,7 @@ cloudinary.config({
   api_secret: CLOUDINARY_API_SECRET,
 });
 
-const server = app.listen(https://mern-eco-dzus.onrender.com, () => {
+const server = app.listen(PORT, () => {
  console.log(`server running on https://mern-eco-dzus.onrender.com`);
   // console.log(`server running on http://localhost:${PORT}`);
 });
