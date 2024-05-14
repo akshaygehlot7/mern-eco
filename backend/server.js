@@ -29,8 +29,9 @@ cloudinary.config({
   api_secret: CLOUDINARY_API_SECRET,
 });
 
-const server = app.listen(PORT, () => {
-  console.log(`server running on http://localhost:${PORT}`);
+const server = app.listen(https://mern-eco-dzus.onrender.com, () => {
+ console.log(`server running on https://mern-eco-dzus.onrender.com`);
+  // console.log(`server running on http://localhost:${PORT}`);
 });
 
 // Unhandled Promise Rejection
